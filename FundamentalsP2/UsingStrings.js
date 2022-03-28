@@ -72,3 +72,13 @@ console.log(output);
 //to break lines
 const output2 = `Hello there I am learning JavaScript.\nIt is very similar to Java.`;
 console.log(output2);
+
+//to show length
+let txt = "ABCDEFGHIJ";
+let length = txt.length;
+console.log("Length is: "+length);
+
+//using replace
+let text = "Hello John, welcome";
+let newText = text.replace("John", "Norsi");
+console.log(newText);
