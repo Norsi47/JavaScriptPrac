@@ -43,3 +43,17 @@ switch(true) {
 
 
 }
+
+//basic user info
+const birthYear = 1997;
+const thisYear = 2022;
+const firstName = "Norsi";
+const lastName = "Onyekaba";
+const age = thisYear - birthYear;
+const fullName = firstName + " " + lastName;
+
+const greetings = "Hello " +fullName+ " Age is: " +age;
+console.log(greetings);
+
+
+
