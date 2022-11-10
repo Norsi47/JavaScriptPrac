@@ -13,6 +13,12 @@ function cubedTest(num) {
     return num * num * num;
 }
 
+//adding two numbers
+function addedNumbers(addNum) {
+    return addNum + addNum + addNum;
+
+}
+
 function factorialTest(num) {
     if (num < 0) return undefined;
     if (num === 0) return 1;
@@ -38,6 +44,8 @@ input.addEventListener("change", () => {
        para.textContent += `${num} cubed is ${cubedTest(num)}. `;
 
        para.textContent += `${num} factorial is ${factorialTest(num)}. `;
+
+       para.textContent += ` ${num} this number added 3 times is ${addedNumbers(num)} `;
 
    }
 
