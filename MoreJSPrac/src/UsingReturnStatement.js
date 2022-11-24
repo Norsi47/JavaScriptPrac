@@ -23,6 +23,10 @@ function addedNumbers(addNum) {
 function divideNumbers(divNum) {
     return divNum / 2;
 }
+//subtract by 2
+function subNumbers(subNum) {
+    return subNum - 2;
+}
 
 function factorialTest(num) {
     if (num < 0) return undefined;
@@ -44,14 +48,16 @@ input.addEventListener("change", () => {
    } else {
        //go into squaredTest "method" at line 8 and come here
        //{num} prints out the number user inputs
-       para.textContent = `${num} squared is ${squaredTest(num)}. `;
+       para.textContent = `User input:${num} squared is ${squaredTest(num)}. `;
 
-       para.textContent += `${num} cubed is ${cubedTest(num)}. `;
+       para.textContent += `User input:${num} cubed is ${cubedTest(num)}. `;
 
-       para.textContent += `${num} factorial is ${factorialTest(num)}. `;
-       para.textContent += ` ${num} this number added 3 times is ${addedNumbers(num)} `;
+       para.textContent += `User input:${num} factorial is ${factorialTest(num)}. `;
+       para.textContent += ` User input:${num} this number added 3 times is ${addedNumbers(num)} `;
 
-       para.textContent += `${num} this number divided by 2 is ${divideNumbers(num)}`;
+       para.textContent += ` User input:${num} this number divided by 2 is ${divideNumbers(num)} `;
+       para.textContent += ` User input:${num} this number subtracted by 2 is ${subNumbers(num)} `;
+
 
    }
 
