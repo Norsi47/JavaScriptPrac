@@ -5,6 +5,7 @@ console.log(newString);
 
 
 // squaredTest is method name
+//what is inside() is the parameter
 function squaredTest(num) {
     return num * num;
 }
@@ -62,3 +63,24 @@ input.addEventListener("change", () => {
    }
 
 });
+
+let userName = 'John';
+function showMessage() {
+    let message = 'Hello, ' + userName;
+    alert(message);
+}
+
+showMessage();
+
+//using outer variable
+let varName = 'Norsi';
+function showMeMessage() {
+    varName = "Nors"; //this changes the outer variable 'Norsi'
+
+    let messages = 'Hello, ' + varName;
+    alert(messages)
+}
+alert(varName); //will call Norsi first, then print out Nors
+showMeMessage();
+
+alert(varName); //then prints out modified name
