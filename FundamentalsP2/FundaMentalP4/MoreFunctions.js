@@ -60,3 +60,5 @@ let usersGreetings = (userAge < 21) ?
     function () { alert('Old enough to drink!'); };
 
 usersGreetings();
+
+//do the same thing but with my examples
