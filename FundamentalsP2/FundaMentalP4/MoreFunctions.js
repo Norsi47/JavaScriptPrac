@@ -14,7 +14,7 @@ function showOk() {
 }
 
 //callback functions
-function  showCancel() {
+function showCancel() {
     alert("You canceled the execution");
 }
 
@@ -25,14 +25,19 @@ function ask(userQuestion, userYes, userNo) {
     if (confirm(userQuestion)) userYes()
     else userNo();
 }
+
 ask(
     "Do you agree user?",
-    function () { alert("You agreed 1."); },
-    function () { alert("You Canceled the execution 2."); }
+    function () {
+        alert("You agreed 1.");
+    },
+    function () {
+        alert("You Canceled the execution 2.");
+    }
 );
 
 let sum = function (a, b) {
-    return a + b ;
+    return a + b;
 };
 
 //asking user to enter age
@@ -45,7 +50,7 @@ if (age < 18) {
         alert('Hello you are underage ');
     };
 } else {
-    welcome =function () {
+    welcome = function () {
         alert("Greetings you are old enough!");
     };
 
@@ -56,8 +61,12 @@ welcome();
 //shorter version of the top
 let userAge = prompt("User what is your age?", 21);
 let usersGreetings = (userAge < 21) ?
-    function () { alert("Not old enough to drink"); } :
-    function () { alert('Old enough to drink!'); };
+    function () {
+        alert("Not old enough to drink");
+    } :
+    function () {
+        alert('Old enough to drink!');
+    };
 
 usersGreetings();
 
