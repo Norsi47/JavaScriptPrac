@@ -25,9 +25,19 @@ console.log(multiply(2 , 4));
 
     //capitalized letters
     function capitalize(initialUpper){
-        return initialUpper.charAt(0).toUpperCase() +initialUpper.slice(-5);
+        return initialUpper.charAt(0).toUpperCase() +initialUpper.slice(1);
     }
     console.log(capitalize('norsi'));
+
+//return last letter in string
+
+function lastLetter(showLastLetter) {
+    return  showLastLetter.slice(-1);
+}
+console.log(lastLetter('NorsiTheGreat'));
+
+const lastLetters ="JackNeHuf"
+    console.log(lastLetters.slice(-1));
 </script>
 </body>
 </html>
