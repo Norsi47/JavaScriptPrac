@@ -9,7 +9,12 @@ for(i = 1; i <= usersAnswer; i++) {
    * is the remainder of 3 = to 0? if so print fizz*/
     if(i % 3 === 0) {
         console.log("Fizz");
-    } //else just print out number
+    }
+    //if divisible by 5 with no remainder
+    else if (i % 5 === 0) {
+        console.log("Buzz");
+    }
+    //else just print out number
     else {
         console.log(i);
     }
