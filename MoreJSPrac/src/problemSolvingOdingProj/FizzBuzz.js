@@ -18,6 +18,6 @@ for(i = 1; i <= usersAnswer; i++) {
     else {
         console.log(i);
     }
-    //streak
+    //streak again 12/21
 
 }
