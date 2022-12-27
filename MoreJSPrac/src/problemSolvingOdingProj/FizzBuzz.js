@@ -20,10 +20,16 @@ for(i = 1; i <= usersAnswer; i++) {
     else if (i % 5 === 0) {
         console.log("Buzz");
     }
+
+    //testing out
+        else if (i % 4 === 0) {
+            console.log("The Number: "+ i +" is divisible by 4 with no remainder" )
+        }
+
     //else just print out number
     else {
         console.log(i);
     }
-    //streak again 12/21
+
 
 }
