@@ -46,7 +46,7 @@ console.log(combineFnameLname);
 const addingUser = firstNames.concat("Boma");
 console.log(addingUser);
 lastNames.splice(2, 3 ,"Yamaha", "FisherMan");
-console.log("After using splice", lastNames);
+console.log("After using splice", lastNames, "Length of last names" , lastNames.length);
 
 
 
