@@ -4,14 +4,14 @@ const cars = ["GMC", "Chevy", "Toyota", "Honda", "Corvette", "Lexus"];
 //can pick which one to print out
 console.log(cars[2], ", Array Length of Cars:", cars.length);
 //accessing last string in array
-console.log( "Car at the end" ,cars[cars.length - 1]);
+console.log("Car at the end", cars[cars.length - 1]);
 
 //using for loop for arrays
 let carsLength = cars.length;
 let text = "<ul>";
 console.log("<-----For Loop for all Cars--->");
 for (let i = 0; i < carsLength; i++) {
-    console.log("<li>" +cars[i] + "</li>");
+    console.log("<li>" + cars[i] + "</li>");
 }
 //print this after open bracket is closed
 text += "</ul>";
@@ -24,7 +24,7 @@ moreCars [2] = "Ford";
 console.log(moreCars [2]);
 //changing arrays
 moreCars [1] = "Fisher Man";
-console.log("Printing all cars ->" +moreCars);
+console.log("Printing all cars ->" + moreCars);
 
 const usersInfo = {firstName: "Felix", lastName: "Alvez", age: 26};
 let userLength = usersInfo.length;
@@ -34,9 +34,9 @@ const fruitsNames = ["Banana", "Apple", "Tomatoes", "Oranges", "Tangerines"];
 //separates arrays with commas
 console.log("Fruit Names=> " + fruitsNames.toString());
 // separates with what is in ()
-console.log(fruitsNames.join("==") + "\nUsing pop() " + fruitsNames.pop() ,
-"\n using push()", fruitsNames.push("Grapes") + " After using Push() " + fruitsNames);
-console.log("Shift() "+ fruitsNames.shift() , "Using Delete-> ", delete fruitsNames[2] + "\n After using delete " + fruitsNames[2]);
+console.log(fruitsNames.join("==") + "\nUsing pop() " + fruitsNames.pop(),
+    "\n using push()", fruitsNames.push("Grapes") + " After using Push() " + fruitsNames);
+console.log("Shift() " + fruitsNames.shift(), "Using Delete-> ", delete fruitsNames[2] + "\n After using delete " + fruitsNames[2]);
 
 //combining two arrays
 const firstNames = ["Norsi", "Arleen", "Landerson", "Hector"];
@@ -45,8 +45,10 @@ const combineFnameLname = firstNames.concat(lastNames);
 console.log(combineFnameLname);
 const addingUser = firstNames.concat("Boma");
 console.log(addingUser);
-lastNames.splice(2, 3 ,"Yamaha", "FisherMan");
-console.log("After using splice", lastNames, "Length of last names" , lastNames.length);
+lastNames.splice(2, 3, "Yamaha", "FisherMan");
+console.log("After using splice", lastNames, "Length of last names", lastNames.length);
+
+
 
 
 
