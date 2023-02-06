@@ -20,11 +20,15 @@ const moreCars = [];
 moreCars [0] = "Honda";
 moreCars [1] = "Buick";
 moreCars [2] = "Ford";
+
 //can pick the number or print the whole thing
 console.log(moreCars [2]);
+//removes last element
+let removeLastEle = moreCars.pop();
 //changing arrays
 moreCars [1] = "Fisher Man";
-console.log("Printing all cars ->" + moreCars);
+console.log("Printing all cars ->" + moreCars,
+    "Using Pop", removeLastEle + "\n After POP -> " + moreCars);
 
 const usersInfo = {firstName: "Felix", lastName: "Alvez", age: 26};
 let userLength = usersInfo.length;
