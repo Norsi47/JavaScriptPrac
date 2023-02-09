@@ -4,7 +4,40 @@
     <meta charset="UTF-8">
     <title>LoopingCode</title>
 </head>
+<!--for search bar looking for contacts
+causes an error when left-->
+<!--<label for="search">Search by contact name: </label>-->
+<!--<input id="search" type="text" />-->
+<!--<button>Search</button>-->
+
 <body>
+
+<!--other example-->
+<label for="number">Enter number: </label>
+<input id="number" type="text" />
+<button>Generate integer squares</button>
+
+<p>Output:</p>
+<script>
+    const para = document.querySelector('p');
+    const input = document.querySelector('input');
+    const btn = document.querySelector('button');
+
+    btn.addEventListener('click', () => {
+        para.textContent = 'Output: ';
+        const num = input.value;
+        input.value = '';
+        input.focus();
+        for (let i = 1; i <= num; i++) {
+            let sqRoot = Math.sqrt(i);
+            if (Math.floor(sqRoot) !== sqRoot) {
+                continue;
+            }
+            para.textContent += `${i} `;
+        }
+    });
+
+</script>
 
 </body>
 <script src="UsingLoops.js"> </script>
