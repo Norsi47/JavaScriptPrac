@@ -55,3 +55,5 @@ btn.addEventListener('click', () => {
     }
 });
 
+//gpu is great, cpu goes hot sometimes
+//nver paid attention to it before
