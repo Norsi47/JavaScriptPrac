@@ -25,7 +25,7 @@
 
 //using for loops for arrays
 const cats = ["Leopard", 'Serval', "Jaguar", 'Tiger', 'Caracal', "Lion"];
-for(let i = 0; i < cats.length; i++) {
+for (let i = 0; i < cats.length; i++) {
     //prints everthing out
     console.log(cats[i]);
 
@@ -56,4 +56,3 @@ btn.addEventListener('click', () => {
 });
 
 //gpu is great, cpu goes hot sometimes
-//nver paid attention to it before
